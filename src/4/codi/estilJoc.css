@@ -1,0 +1,94 @@
+body{
+    background-color: #31A3FC;
+    margin: auto;
+    width: 80%;
+    font-family: 'Faster One', cursive;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-size: 20px;
+
+    display: grid;
+    grid-template:  ". informacion botones ."
+                    ". juego juego ."
+                    ;
+    grid-auto-columns: 1fr 5fr 3fr 1fr;
+}
+
+/* informació de jugadors */
+#jugador1{
+    grid-area: jugador1;
+    
+}
+#jugador2{
+    grid-area: jugador2;
+}
+#nomJug1{
+    grid-area: nomJug1;
+    height: 13px;
+    margin-top: 22px;
+    background: #31A3FC;
+    border: 2px #6D4FD8 solid;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+#nomJug2{
+    grid-area: nomJug2;
+    height: 13px;
+    margin-top: 22px;
+    background: #31A3FC;
+    border: 2px #6D4FD8 solid;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+}
+#informacionPartida{
+    grid-area: informacion;
+    display: grid;
+    grid-template: "jugador1  nomJug1 ."
+                    "jugador2  nomJug2 ."
+                    ;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-bottom: 50px;
+}
+/* zona de juego */
+#juego{
+    display: grid;
+    grid-area: juego;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* zona de mensaje */
+#mensajes{
+    grid-area: mensajes;
+}
+
+
+/* zona de botones */
+#botones{
+    padding-top: 24px;
+    grid-area: botones;
+}
+
+
+/* estilo de los botones */
+.boton{
+    border-radius: 5px 5px 5px 5px;
+    background: #6D4FD8;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    font-family: 'Faster One', cursive;
+    font-size: 20px;
+    border: 2px solid #6D4FD8;
+    text-shadow: 1px 1px 4px black;
+}
+.boton:hover{
+    cursor: pointer;
+    border: 2px dotted white;
+}
+
+a{
+    text-decoration: none;
+    text-shadow: none;
+}

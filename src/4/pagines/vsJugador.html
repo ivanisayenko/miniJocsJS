@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tres en raya</title>
+    <!-- incluim el full d'estil -->
+    <link href="../codi/estilJoc.css" type="text/css" rel="stylesheet" />
+
+    <!-- incluim el codi js -->
+    <script src="../codi/codiJS.js"></script>
+
+    <!-- incluim la libreria de d3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+
+    <!-- incluim una font -->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+</head>
+
+<body id='jugador'>
+    <div id="informacionPartida">
+        <p id="jugador1">JUGADOR 1:</p><input type="text" id="nomJug1" size="10" value="Jugador1" />
+        <p id="jugador2">JUGADOR 2:</p><input type="text" id="nomJug2" size="10" value="Jugador2" />
+    </div>
+    <div id="botones">
+        <input class="boton" type="button" name="iniciarPrimer" value="Jugar" />
+        <a id="opcio1" href="../index.html" class="boton">Menu</a>
+        <input class="boton" type="button" name="reiniciar" value="Reiniciar" />
+    </div>
+    <div id="juego">
+        <svg width="320" height="302" viewBox="0 0 300 300">
+            <defs>
+                <line id="separador" x1="100" y1="5" x2="100" y2="295" style="stroke:#6D4FD8;stroke-width:5; stroke-linecap: round"></line>
+            </defs>
+            <desc>files horitzontals</desc>
+            <use xlink:href="#separador" x="0" y="0" />
+            <use xlink:href="#separador" x="100" y="0" />
+            <desc>files verticals</desc>
+            <use xlink:href="#separador" transform="translate(200) rotate(90 0 100)" />
+            <use xlink:href="#separador" transform="translate(300) rotate(90 0 0)" />
+            <desc>zones de X y O</desc>
+            <rect id="z1" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="5" y="5" />
+            <rect id="z2" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="105" y="5" />
+            <rect id="z3" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="205" y="5" />
+            <rect id="z4" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="5" y="105" />
+            <rect id="z5" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="105" y="105" />
+            <rect id="z6" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="205" y="105" />
+            <rect id="z7" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="5" y="205" />
+            <rect id="z8" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="105" y="205" />
+            <rect id="z9" class="interactuaSVG" width="90" height="90" style="fill:#31A3FC;" x="205" y="205" />
+        </svg>
+    </div>
+</body>
+
+</html>

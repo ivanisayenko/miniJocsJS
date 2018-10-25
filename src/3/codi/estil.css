@@ -1,0 +1,47 @@
+body{
+    background: #ffdd59;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+}
+.nota{
+    width: 100px;
+    height: 100px;
+    background: #ff5e57;
+    border: 2px solid #1e272e;
+    box-shadow: 2px 2px 2px #1e272e;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 8px;
+    transition: .2s;
+}
+
+#d1{grid-area: n1}
+#d2{grid-area: n2}
+#d3{grid-area: n3}
+#d4{grid-area: n4}
+#d5{grid-area: n5}
+#d6{grid-area: n6}
+#d7{grid-area: n7}
+#d8{grid-area: n8}
+#d9{grid-area: n9}
+#d10{grid-area: n10}
+#d11{grid-area: n11}
+#d12{grid-area: n12}
+#d13{grid-area: n13}
+#d14{grid-area: n14}
+#d15{grid-area: n15}
+#d16{grid-area: n16}
+#joc{
+
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:  ". n1 n2 n3 n4 ."
+                    ". n5 n6 n7 n8 ."
+                    ". n9 n10 n11 n12 ."
+                    ". n13 n14 n15 n16 .";
+    grid-template-columns: 1fr 110px 110px 110px 110px 1fr;
+
+}

@@ -1,0 +1,71 @@
+body {
+    width: 80;
+    background: rgb(178, 248, 171);
+    color: white;
+    /* font-weight: bold; */
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+#rojos {
+    background: tomato;
+    width: 99%;
+    height: 300px;
+    float: left;
+    grid-area: rojos;
+    border: 2px dashed black;
+}
+
+#tiempo {
+    background: rgb(226, 224, 75);
+    width: 100%;
+    height: 100px;
+    color: black;
+    margin: auto;
+    grid-area: tiempo;
+    font-size: 30px;
+    border: 1px black solid;
+}
+
+#azules {
+    background: royalblue;
+    width: 99%;
+    height: 300px;
+    float: right;
+    grid-area: azules;
+    border: 2px dashed black;
+}
+
+div {
+    padding: 5px;
+}
+
+#generarDivs {
+    clear: both;
+    background: rgb(140, 220, 226);
+    width: 100%;
+    height: 400px;
+    grid-area: divs;
+    border: 1px black solid;
+}
+
+#juego {
+    display: grid;
+    grid-template: "rojos azules" "divs divs" "tiempo tiempo";
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#tiempo p {
+    text-align: center;
+    float: left;
+    width: 49%;
+    text-shadow: 2px 2px white;
+}
+
+.divRojo,
+.divAzul {
+    box-shadow: 2px 2px 5px black;
+    border: 1px black solid;
+}

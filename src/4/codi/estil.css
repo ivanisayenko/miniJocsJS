@@ -1,0 +1,40 @@
+body{
+    background-color: #31A3FC;
+    margin: auto;
+    width: 80%;
+    font-family: 'Faster One', cursive;
+    color: #6D4FD8;
+    font-size: 20px;
+    text-align: center;
+    display: grid;
+    grid-template:  ". titol ."
+                    ". opcio1 ."
+                    ". opcio2 .";
+    grid-template-columns: 1fr 4fr 1fr;
+}
+#titol{
+    grid-area: titol;
+}
+#opcio1{
+    grid-area: opcio1;
+}
+#opcio2{
+    grid-area: opcio2;
+}
+h1{
+    text-shadow: 1px 1px 5px #FFFFFF;
+    padding-top: 20%; 
+}
+a{
+    width: 100%;
+    color: white;
+    transition: 0.5s;
+    text-shadow: 1px 1px 5px black;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+a:hover{
+    color: #6D4FD8;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px white;
+}
